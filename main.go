@@ -1,11 +1,12 @@
 package main
 
 import (
-	"github.com/tzakrajs/syborg/src/framework"
-	"github.com/tzakrajs/syborg/src/cmd"
 	"fmt"
-	"github.com/bwmarrin/discordgo"
 	"strings"
+
+	"github.com/Cloud-Fortress/syborg/src/cmd"
+	"github.com/Cloud-Fortress/syborg/src/framework"
+	"github.com/bwmarrin/discordgo"
 )
 
 var (
@@ -114,7 +115,7 @@ func registerCommands() {
 	CmdHandler.Register("clear", cmd.ClearCommand, "empty queue???")
 	CmdHandler.Register("current", cmd.CurrentCommand, "Name current song???")
 	CmdHandler.Register("youtube", cmd.YoutubeCommand, "???")
-    CmdHandler.Register("shuffle", cmd.ShuffleCommand, "Shuffle queue???")
-    CmdHandler.Register("pausequeue", cmd.PauseCommand, "Pause song in place???")
-    CmdHandler.Register("pick", cmd.PickCommand, "???")
+	CmdHandler.Register("shuffle", cmd.ShuffleCommand, "Shuffle queue???")
+	CmdHandler.Register("pausequeue", cmd.PauseCommand, "Pause song in place???")
+	CmdHandler.Register("pick", cmd.PickCommand, "???")
 }

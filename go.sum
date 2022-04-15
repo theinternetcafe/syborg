@@ -1,3 +1,5 @@
+github.com/Cloud-Fortress/gopus v0.0.0-20220415180123-0ad532e302bb h1:lGiOL+SekulSsqUeBIExRjtMU9rKqZcPzaMEOIgdpIg=
+github.com/Cloud-Fortress/gopus v0.0.0-20220415180123-0ad532e302bb/go.mod h1:H29/FQTkH85dOitpyrT+bG2MXppXWl0vwAYANXVn9Wk=
 github.com/bwmarrin/discordgo v0.24.0 h1:Gw4MYxqHdvhO99A3nXnSLy97z5pmIKHZVJ1JY5ZDPqY=
 github.com/bwmarrin/discordgo v0.24.0/go.mod h1:NJZpH+1AfhIcyQsPeuBKsUtYrRnjkyu0kIVMCHkZtRY=
 github.com/chzyer/logex v1.1.10/go.mod h1:+Ywpsq7O8HXn0nuIou7OrIPyXbp3wmkHB+jjWRnGsAI=
@@ -15,8 +17,6 @@ github.com/robertkrimen/otto v0.0.0-20211024170158-b87d35c0b86f/go.mod h1:/mK7FZ
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.7.0 h1:nwc3DEeHmmLAfoZucVR881uASk0Mfjw8xYJ99tb5CcY=
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
-github.com/tzakrajs/gopus v0.0.0-20220415173803-7e576aa9d744 h1:umhnqrODuzPLaT+53qnPUI3K3Ko+IJ/JtuBlXoPqA3Q=
-github.com/tzakrajs/gopus v0.0.0-20220415173803-7e576aa9d744/go.mod h1:zBMcIWXegEtIwfeGIo2c8estR7enEfRuaOOouVEkGmc=
 golang.org/x/crypto v0.0.0-20210421170649-83a5a9bb288b h1:7mWr3k41Qtv8XlltBkDkl8LoP3mpSgBW8BUoxtEdbXg=
 golang.org/x/crypto v0.0.0-20210421170649-83a5a9bb288b/go.mod h1:T9bdIzuCu7OtxOm1hfPfRQxPLYneinmdGuTeoZ9dtd4=
 golang.org/x/net v0.0.0-20210226172049-e18ecbb05110/go.mod h1:m0MpNAwzfU5UDzcl9v0D8zg8gWTRqZa9RBIspLL5mdg=

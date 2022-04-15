@@ -1,12 +1,12 @@
-module tzakrajs/syborg
+module Cloud-Fortress/syborg
 
 go 1.18
 
 require (
+	github.com/Cloud-Fortress/gopus v0.0.0-20220415180123-0ad532e302bb
 	github.com/bwmarrin/discordgo v0.24.0
 	github.com/dustin/go-humanize v1.0.0
 	github.com/robertkrimen/otto v0.0.0-20211024170158-b87d35c0b86f
-	github.com/tzakrajs/gopus v0.0.0-20220415173803-7e576aa9d744
 )
 
 require (
