@@ -6,7 +6,8 @@ Syborg is a pluggable discord bot with a Web UI for configuration and support fo
 
 ### Configuration
 Use the example below as a template to create ./config.json
-```{
+```
+{
 	"bot_token": "Bot <TOKEN_GOES_HERE>",
 	"owner_id": "BotMcGee#1337",
 	"use_sharding": false,
