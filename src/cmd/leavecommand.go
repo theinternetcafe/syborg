@@ -1,6 +1,6 @@
 package cmd
 
-import "../framework"
+import "github.com/Cloud-Fortress/syborg/src/framework"
 
 func LeaveCommand(ctx framework.Context) {
 	sess := ctx.Sessions.GetByGuild(ctx.Guild.ID)

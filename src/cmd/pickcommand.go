@@ -1,10 +1,11 @@
 package cmd
 
 import (
-	"../framework"
 	"fmt"
-	"github.com/bwmarrin/discordgo"
 	"strconv"
+
+	"github.com/Cloud-Fortress/syborg/src/framework"
+	"github.com/bwmarrin/discordgo"
 )
 
 const (
@@ -47,9 +48,9 @@ func PickCommand(ctx framework.Context) {
 			return
 		}
 		result := ytSession.results[num-1]
-        _, inp, err := ctx.Youtube.Get(result.Id)
-        video, err := ctx.Youtube.Video(*inp)
-        song := framework.NewSong(video.Media, video.Title, result.Id)
+		_, inp, err := ctx.Youtube.Get(result.Id)
+		video, err := ctx.Youtube.Video(*inp)
+		song := framework.NewSong(video.Media, video.Title, result.Id)
 		sess.Queue.Add(*song)
 		if msg != nil {
 			msg, err = ctx.Discord.ChannelMessageEdit(ctx.TextChannel.ID, msg.ID, msg.Content+", `"+song.Title+"`")
@@ -57,8 +58,8 @@ func PickCommand(ctx framework.Context) {
 			msg = ctx.Reply("Added `" + song.Title + "`")
 		}
 	}
-    if !sess.Queue.Running {
-        ctx.Discord.ChannelMessageEdit(ctx.TextChannel.ID, msg.ID, msg.Content +
-                " to the song queue.\nUse **music play** to start playing the songs! To see the song queue, use **music queue**.")
-    }
+	if !sess.Queue.Running {
+		ctx.Discord.ChannelMessageEdit(ctx.TextChannel.ID, msg.ID, msg.Content+
+			" to the song queue.\nUse **music play** to start playing the songs! To see the song queue, use **music queue**.")
+	}
 }

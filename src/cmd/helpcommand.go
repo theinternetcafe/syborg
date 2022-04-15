@@ -1,9 +1,10 @@
 package cmd
 
 import (
-	"../framework"
 	"bytes"
 	"fmt"
+
+	"github.com/Cloud-Fortress/syborg/src/framework"
 )
 
 func HelpCommand(ctx framework.Context) {

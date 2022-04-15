@@ -1,8 +1,9 @@
 package cmd
 
 import (
-	"../framework"
 	"bytes"
+
+	"github.com/Cloud-Fortress/syborg/src/framework"
 )
 
 func DebugCommand(ctx framework.Context) {

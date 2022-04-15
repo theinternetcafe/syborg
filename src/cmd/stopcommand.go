@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"../framework"
+	"github.com/Cloud-Fortress/syborg/src/framework"
 )
 
 func StopCommand(ctx framework.Context) {

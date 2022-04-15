@@ -1,14 +1,15 @@
 package cmd
 
 import (
-	"../framework"
 	"bytes"
 	"fmt"
-	"github.com/bwmarrin/discordgo"
-	"github.com/dustin/go-humanize"
 	"runtime"
 	"strconv"
 	"time"
+
+	"github.com/Cloud-Fortress/syborg/src/framework"
+	"github.com/bwmarrin/discordgo"
+	"github.com/dustin/go-humanize"
 )
 
 // credit to github.com/iopred/bruxism for this command

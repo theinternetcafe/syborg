@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"../framework"
+	"github.com/Cloud-Fortress/syborg/src/framework"
 )
 
 func JoinCommand(ctx framework.Context) {
