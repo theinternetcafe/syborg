@@ -1,6 +1,6 @@
 ## Syborg: Discord Bot
 
-Syborg is a pluggable discord bot with a Web UI for configuration and support for persistenting state with a built-in database.
+Syborg is a discord bot based on GoMusicBot, containerized, k8s-ready and lightweight
 
 # Usage
 
