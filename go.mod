@@ -1,4 +1,4 @@
-module Cloud-Fortress/syborg
+module github.com/Cloud-Fortress/syborg
 
 go 1.18
 
