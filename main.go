@@ -1,8 +1,8 @@
 package main
 
 import (
-	"../cmd"
-	"../framework"
+	"github.com/tzakrajs/syborg/src/framework"
+	"github.com/tzakrajs/syborg/src/cmd"
 	"fmt"
 	"github.com/bwmarrin/discordgo"
 	"strings"

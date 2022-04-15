@@ -6,7 +6,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/bwmarrin/discordgo"
-	"github.com/layeh.com/gopus"
+	"github.com/tzakrajs/gopus"
 	"io"
 	"os/exec"
 )
