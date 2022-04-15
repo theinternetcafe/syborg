@@ -1,7 +1,8 @@
-FROM golang:bullseye
+FROM golang:alpine
 
-ADD bin/syborg /syborg
+ADD bin/syborg-linux-x64 /syborg-linux-x64
+RUN chmod 755 /syborg-linux-x64
 
-RUN apt-get install -y python ffmpeg youtube-dl
+RUN apk add ffmpeg youtube-dl
 
-CMD ['/syborg']
+ENTRYPOINT /syborg-linux-x64

@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"strings"
 
-	"github.com/Cloud-Fortress/syborg/src/cmd"
-	"github.com/Cloud-Fortress/syborg/src/framework"
+	"github.com/Cloud-Fortress/syborg/pkg/cmd"
+	"github.com/Cloud-Fortress/syborg/pkg/framework"
 	"github.com/bwmarrin/discordgo"
 )
 
@@ -18,7 +19,11 @@ var (
 )
 
 func init() {
-	conf = framework.LoadConfig("config.json")
+	config := os.Getenv("SYBORG_CONFIG")
+	if config == "" {
+		config = "config.json"
+	}
+	conf = framework.LoadConfig(config)
 	PREFIX = conf.Prefix
 
 }

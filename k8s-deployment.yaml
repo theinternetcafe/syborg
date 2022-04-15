@@ -1,0 +1,39 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: syborg
+  labels:
+    app: syborg
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: syborg
+  template:
+    metadata:
+      labels:
+        app: syborg
+    spec:
+      containers:
+      - image: docker.io/tzakrajs/syborg
+        imagePullPolicy: Always
+        name: syborg
+        env:
+        - name: SYBORG_CONFIG
+          value: /config.json
+        resources:
+          limits:
+            cpu: 1000m
+            memory: 512Mi
+          requests:
+            cpu: 500m
+            memory: 256Mi
+        volumeMounts:
+        - mountPath: /config.json
+          name: config
+          subPath: config.json
+      volumes:
+      - name: config
+        configMap: 
+          name: syborg-config
