@@ -14,7 +14,6 @@ var (
 	CmdHandler *framework.CommandHandler
 	Sessions   *framework.SessionManager
 	youtube    *framework.Youtube
-	botId      string
 	PREFIX     string
 )
 
@@ -38,15 +37,11 @@ func main() {
 		discord.ShardID = conf.ShardId
 		discord.ShardCount = conf.ShardCount
 	}
-	usr, err := discord.User("@me")
-	if err != nil {
-		fmt.Println("Error obtaining account details,", err)
-		return
-	}
-	botId = usr.ID
 	discord.AddHandler(commandHandler)
 	discord.AddHandler(func(discord *discordgo.Session, ready *discordgo.Ready) {
-		discord.UpdateStatus(0, conf.DefaultStatus)
+		var status discordgo.UpdateStatusData
+		status.Status = conf.DefaultStatus
+		discord.UpdateStatusComplex(status)
 		guilds := discord.State.Guilds
 		fmt.Println("Ready with", len(guilds), "guilds.")
 	})
@@ -61,7 +56,7 @@ func main() {
 
 func commandHandler(discord *discordgo.Session, message *discordgo.MessageCreate) {
 	user := message.Author
-	if user.ID == botId || user.Bot {
+	if user.ID == discord.State.User.ID || user.Bot {
 		return
 	}
 	content := message.Content

@@ -2,6 +2,7 @@ package framework
 
 import (
 	"fmt"
+
 	"github.com/bwmarrin/discordgo"
 )
 
@@ -38,7 +39,7 @@ func NewContext(discord *discordgo.Session, guild *discordgo.Guild, textChannel 
 }
 
 func (ctx Context) Reply(content string) *discordgo.Message {
-	msg, err := ctx.Discord.ChannelMessageSend(ctx.TextChannel.ID, content)
+	msg, err := ctx.Discord.ChannelMessageSend(ctx.Message.ChannelID, content)
 	if err != nil {
 		fmt.Println("Error whilst sending message,", err)
 		return nil
