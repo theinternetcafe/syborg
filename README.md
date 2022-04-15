@@ -9,7 +9,7 @@ Use the example below as a template to create ./config.json
 ```
 {
 	"bot_token": "Bot <TOKEN_GOES_HERE>",
-	"owner_id": "BotMcGee#1337",
+	"owner_id": "YourName#1337",
 	"use_sharding": false,
 	"shard_id": 0,
 	"shard_count": 1
