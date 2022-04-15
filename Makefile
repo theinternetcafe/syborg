@@ -1,8 +1,9 @@
 SHELL = C:\Program Files\Git\bin\bash
 
 all:
-	bin
-	image
+	make windows
+	make linux
+	make image
 
 windows:
 	mkdir -p bin
