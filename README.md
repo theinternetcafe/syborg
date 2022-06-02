@@ -17,7 +17,7 @@ Use the example below as a template to create ./config.json
 ```
 
 ### Local Docker
-1. Pull container image: `docker pull tzakrajs/syborg`
+1. Pull container image: `docker pull Cloud-Fortress/syborg`
 1. Run container image with config attached: `docker run tzakrajs/syborg -v ./config.json:/config.json -p 8080:80`
 
 ### K8s
