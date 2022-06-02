@@ -18,7 +18,7 @@ Use the example below as a template to create ./config.json
 
 ### Local Docker
 1. Pull container image: `docker pull Cloud-Fortress/syborg`
-1. Run container image with config attached: `docker run tzakrajs/syborg -v ./config.json:/config.json -p 8080:80`
+1. Run container image with config attached: `docker run Cloud-Fortress/syborg -v ./config.json:/config.json -p 8080:80`
 
 ### K8s
 1. Create configmap for the syborg config file `kubectl create configmap syborg-config --from-file=config.json`
