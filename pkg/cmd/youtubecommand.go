@@ -6,8 +6,8 @@ import (
 	"strings"
 
 	"github.com/Cloud-Fortress/syborg/pkg/framework"
+	"github.com/Cloud-Fortress/youtube"
 	"github.com/bwmarrin/discordgo"
-	"github.com/lithdew/youtube"
 )
 
 const result_format = "\n`%d` %s - %s (%s)"
