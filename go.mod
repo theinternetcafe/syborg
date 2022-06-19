@@ -7,10 +7,12 @@ require (
 	github.com/Cloud-Fortress/gopus v0.0.0-20220415180123-0ad532e302bb
 	github.com/bwmarrin/discordgo v0.25.0
 	github.com/dustin/go-humanize v1.0.0
+	github.com/lithdew/youtube v0.0.0-20200524132213-a1fd5d688f8a
 	github.com/robertkrimen/otto v0.0.0-20211024170158-b87d35c0b86f
 )
 
 require (
+	github.com/andybalholm/brotli v1.0.4 // indirect
 	github.com/buger/jsonparser v1.1.1 // indirect
 	github.com/chzyer/logex v1.2.1 // indirect
 	github.com/chzyer/readline v1.5.0 // indirect
@@ -18,15 +20,22 @@ require (
 	github.com/creack/pty v1.1.18 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/gorilla/websocket v1.5.0 // indirect
+	github.com/klauspost/compress v1.15.6 // indirect
 	github.com/kr/pretty v0.3.0 // indirect
 	github.com/kr/pty v1.1.8 // indirect
 	github.com/kr/text v0.2.0 // indirect
+	github.com/lithdew/bytesutil v0.0.0-20200409052507-d98389230a59 // indirect
+	github.com/lithdew/nicehttp v0.0.0-20200422123956-0d3d3dd9b482 // indirect
 	github.com/nbutton23/zxcvbn-go v0.0.0-20210217022336-fa2cb2858354 // indirect
 	github.com/pkg/diff v0.0.0-20210226163009-20ebb0f2a09e // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/rogpeppe/go-internal v1.8.1 // indirect
 	github.com/stretchr/objx v0.4.0 // indirect
 	github.com/stretchr/testify v1.7.2 // indirect
+	github.com/valyala/bytebufferpool v1.0.0 // indirect
+	github.com/valyala/fasthttp v1.37.0 // indirect
+	github.com/valyala/fastjson v1.6.3 // indirect
+	github.com/valyala/tcplisten v1.0.0 // indirect
 	github.com/yuin/goldmark v1.4.12 // indirect
 	golang.org/x/crypto v0.0.0-20220525230936-793ad666bf5e // indirect
 	golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4 // indirect
@@ -40,5 +49,6 @@ require (
 	gopkg.in/errgo.v2 v2.1.0 // indirect
 	gopkg.in/readline.v1 v1.0.0-20160726135117-62c6fe619375 // indirect
 	gopkg.in/sourcemap.v1 v1.0.5 // indirect
+	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )

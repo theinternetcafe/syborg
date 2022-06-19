@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
-	ytsearch "github.com/AnjanaMadu/YTSearch"
 	"github.com/Cloud-Fortress/syborg/pkg/framework"
 	"github.com/bwmarrin/discordgo"
+	"github.com/lithdew/youtube"
 )
 
 const result_format = "\n`%d` %s - %s (%s)"
@@ -18,7 +18,7 @@ type (
 	ytSearchSessions map[string]ytSearchSession
 
 	ytSearchSession struct {
-		results []ytsearch.YTSearchResult
+		results []youtube.SearchResult
 	}
 
 	YTSearchContent struct {
@@ -49,20 +49,20 @@ func YoutubeCommand(ctx framework.Context) {
 		return
 	}
 	query := strings.Join(ctx.Args, " ")
-	results, err := ytsearch.Search(query)
+	results, err := youtube.Search(query, 0)
 	if err != nil {
 		ctx.Reply("An error occured!")
 		fmt.Println("Error searching youtube,", err)
 		return
 	}
-	if len(results) == 0 {
+	if len(results.Items) == 0 {
 		ctx.Reply("No results found for your query `" + query + "`.")
 		return
 	}
 	buffer := bytes.NewBufferString("__Search results__ for `" + query + "`:\n")
-	for index, result := range results {
+	for index, result := range results.Items {
 		fmt.Printf("Title: %s\nVideo Id: %s\n\n", result.Title, result.VideoId)
-		buffer.WriteString(fmt.Sprintf(result_format, index+1, result.Title, result.Channel,
+		buffer.WriteString(fmt.Sprintf(result_format, index+1, result.Title, result.Author,
 			formatDuration(result.Duration)))
 	}
 	buffer.WriteString("\n\nTo pick a song, use `music pick <number>`.")
