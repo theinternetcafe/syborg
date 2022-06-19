@@ -20,14 +20,6 @@ type (
 	ytSearchSession struct {
 		results youtube.SearchResult
 	}
-
-	YTSearchContent struct {
-		ID          string `json:"id"`
-		Title       string `json:"title"`
-		Description string `json:"description"`
-		Author      string `json:"author"`
-		Duration    string `json:"duration"`
-	}
 )
 
 func ytSessionIdentifier(user *discordgo.User, channel *discordgo.Channel) string {

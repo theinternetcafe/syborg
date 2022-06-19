@@ -34,7 +34,7 @@ func PickCommand(ctx framework.Context) {
 		ctx.Reply("Not in a voice channel! To make the bot join one, use `music join`.")
 		return
 	}
-	rLen := len(ytSession.results)
+	rLen := len(ytSession.results.Items)
 	var msg *discordgo.Message
 	for i := 0; i < argsLen; i++ {
 		num, err := strconv.Atoi(ctx.Args[i])
@@ -48,9 +48,9 @@ func PickCommand(ctx framework.Context) {
 			return
 		}
 		result := ytSession.results.Items[num-1]
-		_, inp, err := ctx.Youtube.Get(result.ID)
+		_, inp, err := ctx.Youtube.Get(string(result.ID))
 		video, err := ctx.Youtube.Video(*inp)
-		song := framework.NewSong(video.Media, video.Title, result.ID)
+		song := framework.NewSong(video.Media, video.Title, string(result.ID))
 		sess.Queue.Add(*song)
 		if msg != nil {
 			msg, err = ctx.Discord.ChannelMessageEdit(ctx.TextChannel.ID, msg.ID, msg.Content+", `"+song.Title+"`")
