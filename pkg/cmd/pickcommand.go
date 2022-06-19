@@ -48,9 +48,9 @@ func PickCommand(ctx framework.Context) {
 			return
 		}
 		result := ytSession.results[num-1]
-		_, inp, err := ctx.Youtube.Get(result.Id)
+		_, inp, err := ctx.Youtube.Get(result.VideoId)
 		video, err := ctx.Youtube.Video(*inp)
-		song := framework.NewSong(video.Media, video.Title, result.Id)
+		song := framework.NewSong(video.Media, video.Title, result.VideoId)
 		sess.Queue.Add(*song)
 		if msg != nil {
 			msg, err = ctx.Discord.ChannelMessageEdit(ctx.TextChannel.ID, msg.ID, msg.Content+", `"+song.Title+"`")
