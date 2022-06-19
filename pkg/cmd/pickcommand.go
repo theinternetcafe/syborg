@@ -47,10 +47,10 @@ func PickCommand(ctx framework.Context) {
 			ctx.Reply(fmt.Sprintf(invalid_song_format, num, rLen))
 			return
 		}
-		result := ytSession.results[num-1]
-		_, inp, err := ctx.Youtube.Get(result.VideoId)
+		result := ytSession.results.Items[num-1]
+		_, inp, err := ctx.Youtube.Get(result.ID)
 		video, err := ctx.Youtube.Video(*inp)
-		song := framework.NewSong(video.Media, video.Title, result.VideoId)
+		song := framework.NewSong(video.Media, video.Title, result.ID)
 		sess.Queue.Add(*song)
 		if msg != nil {
 			msg, err = ctx.Discord.ChannelMessageEdit(ctx.TextChannel.ID, msg.ID, msg.Content+", `"+song.Title+"`")
