@@ -3,11 +3,21 @@ module github.com/Cloud-Fortress/syborg
 go 1.18
 
 require (
-    github.com/Cloud-Fortress/youtube v1.0.1
 	github.com/Cloud-Fortress/gopus v0.0.0-20220415180123-0ad532e302bb
+	github.com/Cloud-Fortress/youtube v1.0.0
 	github.com/bwmarrin/discordgo v0.25.0
 	github.com/dustin/go-humanize v1.0.0
 	github.com/robertkrimen/otto v0.0.0-20211024170158-b87d35c0b86f
+)
+
+require (
+	github.com/andybalholm/brotli v1.0.4 // indirect
+	github.com/klauspost/compress v1.15.6 // indirect
+	github.com/lithdew/bytesutil v0.0.0-20200409052507-d98389230a59 // indirect
+	github.com/lithdew/nicehttp v0.0.0-20200422123956-0d3d3dd9b482 // indirect
+	github.com/valyala/bytebufferpool v1.0.0 // indirect
+	github.com/valyala/fasthttp v1.37.0 // indirect
+	github.com/valyala/fastjson v1.6.3 // indirect
 )
 
 require (

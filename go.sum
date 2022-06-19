@@ -2,6 +2,8 @@ github.com/AnjanaMadu/YTSearch v1.0.0 h1:88ovSXJDVSr/bNQY90CYdpAIDSYtlW2Ik6D8VHR
 github.com/AnjanaMadu/YTSearch v1.0.0/go.mod h1:ReflwduZK14df7oUOSuNDqLwox2D2heQknhYbEWQlD8=
 github.com/Cloud-Fortress/gopus v0.0.0-20220415180123-0ad532e302bb h1:lGiOL+SekulSsqUeBIExRjtMU9rKqZcPzaMEOIgdpIg=
 github.com/Cloud-Fortress/gopus v0.0.0-20220415180123-0ad532e302bb/go.mod h1:H29/FQTkH85dOitpyrT+bG2MXppXWl0vwAYANXVn9Wk=
+github.com/Cloud-Fortress/youtube v1.0.0 h1:V4gcnk+mRKPfQH3OrIvoePYapC7w4KCoZvx73G+PFBw=
+github.com/Cloud-Fortress/youtube v1.0.0/go.mod h1:Pro4wj93cWE03WqRMKlGs1HxNo/qLIvbJ+c15rkR+Sg=
 github.com/andybalholm/brotli v1.0.4 h1:V7DdXeJtZscaqfNuAdSRuRFzuiKlHSC/Zh3zl9qY3JY=
 github.com/andybalholm/brotli v1.0.4/go.mod h1:fO7iG3H7G2nSZ7m0zPUDn85XEX2GTukHGRSepvi9Eig=
 github.com/buger/jsonparser v1.1.1 h1:2PnMjfWD7wBILjqQbt530v576A/cAbQvEW9gGIpYMUs=
@@ -50,8 +52,6 @@ github.com/lithdew/bytesutil v0.0.0-20200409052507-d98389230a59 h1:CQpoOQecHxhvg
 github.com/lithdew/bytesutil v0.0.0-20200409052507-d98389230a59/go.mod h1:89JlULMIJ/+YWzAp5aHXgAD2d02S2mY+a+PMgXDtoNs=
 github.com/lithdew/nicehttp v0.0.0-20200422123956-0d3d3dd9b482 h1:zh+0lJQ0nF+5Fv1+qVCn7YAukzCvpnWLF4mXCtUPTLo=
 github.com/lithdew/nicehttp v0.0.0-20200422123956-0d3d3dd9b482/go.mod h1:Mo+cHgR+hYunqlEUQtLblT9l6F1PX54Zcr/AGQsy1u4=
-github.com/lithdew/youtube v0.0.0-20200524132213-a1fd5d688f8a h1:iArvv5kE4agZCrD3gS3IanGdQIkcgDLgOzEte+NXJ0c=
-github.com/lithdew/youtube v0.0.0-20200524132213-a1fd5d688f8a/go.mod h1:qeGQwbNuh0V2gpOl5ca/nEBs80m1Zhs8ukOJXchSFqQ=
 github.com/nbutton23/zxcvbn-go v0.0.0-20210217022336-fa2cb2858354 h1:4kuARK6Y6FxaNu/BnU2OAaLF86eTVhP2hjTB6iMvItA=
 github.com/nbutton23/zxcvbn-go v0.0.0-20210217022336-fa2cb2858354/go.mod h1:KSVJerMDfblTH7p5MZaTt+8zaT2iEk3AkVb9PQdZuE8=
 github.com/pkg/diff v0.0.0-20210226163009-20ebb0f2a09e h1:aoZm08cpOy4WuID//EZDgcC4zIxODThtZNPirFr42+A=
