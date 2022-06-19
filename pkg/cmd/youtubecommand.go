@@ -18,14 +18,14 @@ type (
 	ytSearchSessions map[string]ytSearchSession
 
 	ytSearchSession struct {
-		results []youtube.SearchResult
+		results youtube.SearchResult
 	}
 
 	YTSearchContent struct {
-		VideoId     string `json:"video_id"`
+		ID          string `json:"id"`
 		Title       string `json:"title"`
 		Description string `json:"description"`
-		Channel     string `json:"channel"`
+		Author      string `json:"author"`
 		Duration    string `json:"duration"`
 	}
 )
@@ -61,7 +61,7 @@ func YoutubeCommand(ctx framework.Context) {
 	}
 	buffer := bytes.NewBufferString("__Search results__ for `" + query + "`:\n")
 	for index, result := range results.Items {
-		fmt.Printf("Title: %s\nVideo Id: %s\n\n", result.Title, result.VideoId)
+		fmt.Printf("Title: %s\nVideo Id: %s\n\n", result.Title, result.ID)
 		buffer.WriteString(fmt.Sprintf(result_format, index+1, result.Title, result.Author,
 			formatDuration(result.Duration)))
 	}
